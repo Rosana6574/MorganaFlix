@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a2538;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+ 
+header {
+  background-color: #252525;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+header h1 { 
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+  
+nav a {
+  color: #ffffff;
+  margin: 0 2px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 9px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background-color: #1F5372;
+}
+
+nav a:hover {
+  background-color: #89cee6;
+  color: #000000;
+  border-color: #89cee6;
+  box-shadow: 0 0 15px #89cee6, 0 0 5px #89cee6 inset;
+  transform: scale(1.05);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0rem 0;
+  width: 100%;
+  display: block;
+  font-size: 4em;
+  color: #ffffff;
+  background-color: #181818;
+  /*text-shadow: 2px 2px 10px #ca3232;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}  
+  
+  
+.hero {
+  background-image: url('https://via.placeholder.com/1200x500?text=Imagem+Principal');
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 30px;
+  background-color: #0d3a5a;
+  background-size: cover;
+  background-position: center;
+}
+  
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 2rem;
+  background-color: #0a2538;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+  
+.card {
+  background-color: #1b3d50;
+  margin-right: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #dde4e9;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+  
+.card p {
+  padding: 10px;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.titul0 {
+  margin-bottom: 2px; /* Reduz o espaço entre o título e a data */
+  font-size: 14px;
+  text-align: center;
+}
+  
+.arrows {
+  position: absolute;
+  top: 40%;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 2rem;
+}
+  
+.arrow-left, .arrow-right {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+  
+.arrow-left:hover, .arrow-right:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+footer {
+  background-color: #161616;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888888;
+}
+
+  
+/* -------- PASTA = homenagem.html -------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a2538;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+audio {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  background-color: #fceaff;
+  border: 3px solid #1c5f8f;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.image-side img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #dde4e9;
+}
+
+.text-side {
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #7dbdeb;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+

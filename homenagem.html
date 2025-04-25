@@ -1,0 +1,94 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
+  <title>Homenagem MorganaFlix</title>
+</head>
+<body>
+
+  <header>
+    <script defer src="script.js"></script>
+    <h1>Homenagem</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="index.html#filme">Filme</a>
+    </nav>
+  </header>
+
+  <div id="snow"></div>
+
+  <h1>Milenna Meyfer</h1>
+
+  <audio controls>
+    <source src="audio/Músicahomenagem .mp3" type="audio/mpeg">
+  </audio>
+
+  <section>
+    <div class="container">
+        <div class="image-side">
+          <img src="Img/MorganaFoto06.jpg" alt="Imagem da fada"/>
+        </div>
+        <div class="text-side">
+          <p>
+            🫐- Hoje é o dia em que o mundo ganhou uma alma encantada, daquelas que brilha feito pó 
+            de fada e espalha magia por onde passa. Milenna, minha pequena ovelha, nesse dia tão 
+            especial, eu queria te lembrar do quanto você é uma pessoa incrível. Daquelas raras, com 
+            coração puro e riso que aquece. <br>
+            A nossa amizade é como um encanto antigo, daqueles que nem o tempo nem a distância apagam. 
+            Porque a verdade é que almas gêmeas não se encontram só em romances às vezes, elas se 
+            reconhecem em uma amizade sincera, leal e iluminada como a nossa. E isso é um tipo de amor 
+            que o mundo precisa valorizar mais. <br>
+            Você é luz. Uma fada entre os humanos. E eu sou grata todos os dias por ter cruzado com você 
+            nessa vida. Que esse novo ciclo venha com ainda mais brilho, sonhos realizados e momentos que 
+            façam seu coração dançar.
+          </p>
+        </div>
+
+        <div class="image-side">
+          <img src="Img/MorganaFoto07.jpg" alt="Imagem da fada"/>
+        </div>
+        <div class="text-side">
+          <p>
+            🫐- Te celebro hoje e sempre, minha ovelha mágica. Sua amizade é um presente que a vida me deu, desses 
+            que a gente guarda com todo cuidado no coração, porque sabe que é especial demais pra ser explicado. <br>
+            Entre nós, não precisa de palavras bonitas o tempo todo. Tem silêncio que acolhe, tem risadas que curam. 
+            Tem carinho que é constante, mesmo de longe. E isso, pra mim, é amor verdadeiro. Porque nem toda alma gêmea 
+            é par romântico às vezes, é irmã de alma e de coração. E você é isso pra mim. <br>
+            Que seu novo ciclo seja doce, cheio de encantos e protegido por todas as fadas do universo. Que você nunca se 
+            esqueça da mulher linda, forte e delicada que é e do quanto é amada por mim, por ser exatamente assim, te amo SEMPRE.
+          </p>
+        </div>
+    </div>
+  </section>
+
+  <script>
+    const snowContainer = document.getElementById('snow');
+  
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = '❄';
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+  
+      snowContainer.appendChild(snowflake);
+  
+      setTimeout(() => {
+        snowflake.remove();
+      }, 5000);
+    }
+  
+    setInterval(createSnowflake, 200);
+  </script>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 MorganaFlix. Todos os direitos reservados.</p>
+  </footer>
+  
+
+</body>
+</html>

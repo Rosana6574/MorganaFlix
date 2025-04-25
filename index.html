@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MorganaFlix</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="snow"></div>
+
+  <header>
+    <script defer src="script.js"></script>
+    <h1>MorganaFlix</h1>
+    <!--<h1>TinkerCine</h1>-->
+    <nav>
+      <a href="#filme">Filme</a>
+      <a href="homenagem.html">Homenagem</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tinker Bell e o Reino das Fadas</h2>
+    <div>
+      <script defer src="script.js"></script>
+      <img src="" alt="">
+    </div>
+  </section>
+  
+  <h2 class="section-title" id="filme">FILMES</h2>
+  <section class="gallery">
+
+    <div class="card">
+      <a href="filmes/TinkerBell01.html">
+      <img src="Img/TinkerBell.01.jpg" alt="Tinker Bell 1">
+      <p class="titul0">Tinker Bell: <br>Uma Aventura no <br>Mundo das Fadas</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell02.html">
+      <img src="Img/TinkerBell.02.jpg" alt="Tinker Bell 2">
+      <p class="titul0">Tinker Bell: <br>O Tesouro Perdido</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell03.html">
+      <img src="Img/TinkerBell.03.jpg" alt="Tinker Bell 3">
+      <p class="titul0">Tinker Bell: <br>O Resgate da Fada</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell04.html">
+      <img src="Img/TinkerBell.04.jpg" alt="Tinker Bell 4">
+      <p class="titul0">Tinker Bell: <br>o Segredo das Fadas</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell05.html">
+      <img src="Img/TinkerBell.05.jpg" alt="Tinker Bell 5">
+      <p class="titul0">Tinker Bell: <br>Fadas e Piratas</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell06.html">
+      <img src="Img/TinkerBell.06.jpg" alt="Tinker Bell 6">
+      <p class="titul0">Tinker Bell: <br>O Monstro da Terra <br>do Nunca</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/TinkerBell07.html">
+      <img src="Img/TinkerBellJogos.07.jpg" alt="Tinker Bell 7">
+      <p class="titul0">Tinker Bell: <br>Jogos dos Refúgio das Fadas</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="serie/JogosFadas.html">
+      <img src="Img/DisneyFadas.08.jpg" alt="Tinker Bell 8">
+      <p class="titul0">Tinker Bell: <br>Disney Fadas</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/PeterPan01.html">
+      <img src="Img/PeterPan.01.jpg" alt="Peter Pan 1">
+      <p class="titul0">PETER PAN <br>(1953)</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/PeterPan02.html">
+      <img src="Img/PeterPan.02.jpg" alt="Peter Pan 2">
+      <p class="titul0">RETURN TO NEVER LAND <br>(2002)</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/PeterPan03.html">
+      <img src="Img/PeterPan.03.jpg" alt="Peter Pan 3">
+      <p class="titul0">PETER PAN <br>(2003)</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="filmes/Pan04.html">
+      <img src="Img/Pan.04.jpg" alt="Peter Pan 4">
+      <p class="titul0">Peter Pan <br>(2015)</p>
+      </a>
+    </div>
+
+  </section>
+
+  <script>
+    const snowContainer = document.getElementById('snow');
+  
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = '❄';
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+  
+      snowContainer.appendChild(snowflake);
+  
+      setTimeout(() => {
+        snowflake.remove();
+      }, 5000);
+    }
+  
+    setInterval(createSnowflake, 200);
+  </script>
+
+  <footer>
+    <p>&copy; 2025 MorganaFlix. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
